@@ -1,0 +1,166 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a9b6ee76;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-container label {
+  display: block;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4d91e9;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+.login-container button:hover {
+  background-color: #4d91e985;
+}
+
+.login-container .error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* ===================================== Dashboard ====================================== */
+
+.dashboard-container {
+  padding: 20px;
+}
+
+#city {
+  text-align: start;
+  background-color: #f4f4f4;
+  padding: 5px 0 5px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+span {
+  font-weight: 100;
+  font-size: medium;
+}
+
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.weather-card-title {
+  color: #4d91e9;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.wind-arrow {
+  display: inline-block;
+  transform: rotate(calc(var(--wind-angle) - 90deg));
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.centered-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.weather-summary {
+  margin-top: 0;
+}
