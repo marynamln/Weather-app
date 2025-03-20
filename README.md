@@ -1,8 +1,7 @@
-# React + Vite
+# Simple weather app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Login information: 
+  email: maryna3@gmail.com
+  password: maryna3
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visit the site: https://resplendent-semolina-d8d761.netlify.app/
