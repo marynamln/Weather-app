@@ -35,9 +35,6 @@ function DashboardPage() {
     const fetchWeather = (position) => {
       const { latitude, longitude } = position.coords;
 
-      // const latitude = 50.4546600;
-      // const longitude = 30.5238000;
-
       const apiKey = '7b1pxnaca870skynbqh7lluk1c10k2kskedebdwf';
       const url = `https://www.meteosource.com/api/v1/free/point?lat=${latitude}&lon=${longitude}&sections=all&timezone=Europe/Kiev&language=en&units=metric&key=${apiKey}`;
 

@@ -12,7 +12,7 @@ function LoginPage({ setIsAuthenticated }) {
     e.preventDefault();
     if (email === 'maryna3@gmail.com' && password === 'maryna3') {
       setIsAuthenticated(true);
-      Cookies.set('auth', 'true', { expires: 1, secure: true, sameSite: 'strict' });
+      Cookies.set('auth', 'true', { expires: 1 });
       navigate('/dashboard');
     } else {
       setError('Invalid login or password!');
