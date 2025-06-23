@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -27,10 +27,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #a9b6ee76;
 }
 
 .login-container {
@@ -89,6 +87,8 @@ body {
 /* ===================================== Dashboard ====================================== */
 
 .dashboard-container {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   color: #333;
 }
@@ -130,8 +130,9 @@ span {
   transform: rotate(calc(var(--wind-angle) - 90deg));
 }
 
-.flex {
+.weather-cards-section {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   flex-wrap: wrap;
 }

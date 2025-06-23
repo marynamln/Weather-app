@@ -6,22 +6,6 @@ function DashboardPage() {
   const [cityName, setCityName] = useState('');
   const [countryName, setCountryName] = useState('');
 
-  // useEffect(() => {
-  //   fetch(
-  //     'https://www.meteosource.com/api/v1/free/point?place_id=kyiv&sections=all&timezone=Europe/Kiev&language=en&units=metric&key=7b1pxnaca870skynbqh7lluk1c10k2kskedebdwf'
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       const dailyForecast = data.daily.data.slice(0, 5);
-  //       setWeatherData(dailyForecast);
-  //       setLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error fetching weather data:', error);
-  //       setLoading(false);
-  //     });
-  // }, []);
-
   useEffect(() => {
     const getLocation = () => {
       if (navigator.geolocation) {
@@ -88,7 +72,7 @@ function DashboardPage() {
   return (
     <div className="dashboard-container">
       <h2 id="city">{cityName}, <span>{countryName}</span></h2>
-      <div className="flex">
+      <div className="weather-cards-section">
         {weatherData.map((day, index) => (
           <WeatherCard key={index} day={day} />
         ))}
